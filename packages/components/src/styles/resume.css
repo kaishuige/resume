@@ -9,6 +9,19 @@
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  .resume-content {
+    width: 210mm !important;
+    min-height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
   .r-resume {
     font-family: "SimSun", "宋体", "Microsoft YaHei", "微软雅黑", serif !important;
     -webkit-font-smoothing: initial;
