@@ -16,7 +16,7 @@ importers:
     dependencies:
       eslint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(eslint-config-prettier@9.0.0(eslint@8.46.0))(eslint@8.46.0)(prettier@3.0.1)
+        version: 5.0.0(eslint-config-prettier@9.0.0)(eslint@8.46.0)(prettier@3.0.1)
     devDependencies:
       '@antfu/eslint-config-react':
         specifier: ^0.40.2
@@ -29,7 +29,7 @@ importers:
         version: 5.17.0
       '@testing-library/react':
         specifier: 14.0.0
-        version: 14.0.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+        version: 14.0.0(react-dom@18.0.0)(react@18.0.0)
       '@types/node':
         specifier: ^20.4.9
         version: 20.4.9
@@ -41,7 +41,7 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       bumpp:
         specifier: ^9.1.1
         version: 9.1.1
@@ -71,10 +71,10 @@ importers:
         version: 5.1.6
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
       vitest:
         specifier: ^0.34.1
-        version: 0.34.1(jsdom@22.1.0)(terser@5.20.0)
+        version: 0.34.1(jsdom@22.1.0)
 
   examples/customize-template:
     dependencies:
@@ -98,10 +98,10 @@ importers:
     dependencies:
       '@resumejs/components':
         specifier: latest
-        version: 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: link:../../packages/components
       '@resumejs/resume':
         specifier: latest
-        version: 0.9.5(@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)))(@types/node@20.4.9)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(terser@5.20.0)(workbox-build@7.0.0)(workbox-window@7.0.0)
+        version: link:../../packages/resume
       react:
         specifier: ^18.0.0
         version: 18.0.0
@@ -120,12 +120,6 @@ importers:
       '@types/hast':
         specifier: ^3.0.0
         version: 3.0.0
-      '@unocss/preset-wind':
-        specifier: ^0.55.0
-        version: 0.55.0
-      '@unocss/reset':
-        specifier: ^0.55.0
-        version: 0.55.0
       clsx:
         specifier: ^2.0.0
         version: 2.0.0
@@ -162,12 +156,9 @@ importers:
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
-      unocss:
-        specifier: ^0.55.0
-        version: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
       vite-plugin-dts:
         specifier: ^3.5.1
-        version: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 3.5.1(@types/node@20.4.9)(typescript@5.1.6)(vite@4.4.9)
       yaml:
         specifier: ^2.3.1
         version: 2.3.1
@@ -183,10 +174,10 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
 
   packages/create-resumejs:
     dependencies:
@@ -204,10 +195,10 @@ importers:
     dependencies:
       '@resumejs/components':
         specifier: latest
-        version: 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: link:../../components
       '@resumejs/resume':
         specifier: latest
-        version: 0.9.5(@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)))(@types/node@20.4.9)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(terser@5.20.0)(workbox-build@7.0.0)(workbox-window@7.0.0)
+        version: link:../../resume
       react:
         specifier: ^18.0.0
         version: 18.0.0
@@ -222,7 +213,7 @@ importers:
         version: 1.1.19
       '@resumejs/components':
         specifier: latest
-        version: 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: link:../../components
       '@unocss/preset-icons':
         specifier: ^0.55.0
         version: 0.55.0
@@ -240,7 +231,7 @@ importers:
         version: 18.0.0(react@18.0.0)
       unocss:
         specifier: ^0.55.0
-        version: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 0.55.0(postcss@8.4.27)(vite@4.4.9)
     devDependencies:
       '@types/react':
         specifier: ^18.0.0
@@ -250,10 +241,10 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
 
   packages/resume:
     dependencies:
@@ -271,7 +262,7 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       kolorist:
         specifier: ^1.8.0
         version: 1.8.0
@@ -292,10 +283,10 @@ importers:
         version: 1.2.1
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
       vite-plugin-pwa:
         specifier: ^0.16.5
-        version: 0.16.5(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))(workbox-build@7.0.0)(workbox-window@7.0.0)
+        version: 0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
 
   packages/template:
     dependencies:
@@ -343,7 +334,7 @@ importers:
         version: 5.0.0
       vite-plugin-dts:
         specifier: ^3.5.1
-        version: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 3.5.1(@types/node@20.4.9)(typescript@5.1.6)(vite@4.4.9)
       yaml:
         specifier: ^2.3.1
         version: 2.3.1
@@ -356,10 +347,10 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
 
   playground:
     dependencies:
@@ -401,13 +392,13 @@ importers:
         version: 0.54.0(@types/react@18.0.0)(monaco-editor@0.41.0)(react@18.0.0)
       react-router-dom:
         specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+        version: 6.15.0(react-dom@18.0.0)(react@18.0.0)
       react-use:
         specifier: ^17.4.0
-        version: 17.4.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+        version: 17.4.0(react-dom@18.0.0)(react@18.0.0)
       unocss:
         specifier: ^0.55.0
-        version: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 0.55.0(postcss@8.4.27)(vite@4.4.9)
     devDependencies:
       '@types/react':
         specifier: ^18.0.0
@@ -417,10 +408,10 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
 
   templates/default:
     dependencies:
@@ -486,10 +477,10 @@ importers:
         version: 5.0.0
       unocss:
         specifier: ^0.55.0
-        version: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 0.55.0(postcss@8.4.27)(vite@4.4.9)
       vite-plugin-dts:
         specifier: ^3.5.1
-        version: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 3.5.1(@types/node@20.4.9)(typescript@5.1.6)(vite@4.4.9)
       yaml:
         specifier: ^2.3.1
         version: 2.3.1
@@ -502,13 +493,13 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
       vite-plugin-import-css:
         specifier: ^0.1.5
-        version: 0.1.5(@types/node@20.4.9)(rollup@3.28.0)(terser@5.20.0)
+        version: 0.1.5(@types/node@20.4.9)
 
   templates/nova:
     dependencies:
@@ -571,10 +562,10 @@ importers:
         version: 5.0.0
       unocss:
         specifier: ^0.55.0
-        version: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 0.55.0(postcss@8.4.27)(vite@4.4.9)
       vite-plugin-dts:
         specifier: ^3.5.1
-        version: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 3.5.1(@types/node@20.4.9)(typescript@5.1.6)(vite@4.4.9)
       yaml:
         specifier: ^2.3.1
         version: 2.3.1
@@ -587,13 +578,13 @@ importers:
         version: 18.0.0
       '@vitejs/plugin-react':
         specifier: ^4.0.4
-        version: 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
+        version: 4.0.4(vite@4.4.9)
       vite:
         specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+        version: 4.4.9(@types/node@20.4.9)
       vite-plugin-import-css:
         specifier: ^0.1.5
-        version: 0.1.5(@types/node@20.4.9)(rollup@3.28.0)(terser@5.20.0)
+        version: 0.1.5(@types/node@20.4.9)
 
 packages:
 
@@ -1664,32 +1655,6 @@ packages:
   '@remix-run/router@1.8.0':
     resolution: {integrity: sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==}
     engines: {node: '>=14.0.0'}
-
-  '@resumejs/components@0.9.5':
-    resolution: {integrity: sha512-lWpCGaqsUBulnykeYu+apNvBcznwa0FItyK1eRYom/Vjw0GlN9+ht4SxR4nJq3v76Y/j53LpsztloJYtTWDX4g==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
-
-  '@resumejs/resume@0.9.5':
-    resolution: {integrity: sha512-b3pt+/gi8N3DzOT0lUQsr4CLdXpZM/E9kbJpFdzOW4fHy8PNKwlEGeEcig6zc6t2+Ts6275KlrnFJZe3cRwfDQ==}
-    hasBin: true
-    peerDependencies:
-      '@resumejs/components': 0.9.5
-      react: ^18.0.0
-      react-dom: ^18.0.0
-
-  '@resumejs/template-default@0.9.5':
-    resolution: {integrity: sha512-65mMwB0WbNfKYjHwBvoaQ7Sh1Oy5iw21pjtOkTvRwOtalKA+oVveFoStt7L4SSOTV+dQ1hmDhVCjL3gD9BqFhg==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
-
-  '@resumejs/template@0.9.5':
-    resolution: {integrity: sha512-kvcHJpjBJqRHtB3eha0PariR8Md3a3h4rXyKUhfS53D6Cg+DCaGUxPNYF/aZGji8uWtCYKX6GdN5xqqszA7XCQ==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
 
   '@rollup/plugin-alias@5.0.0':
     resolution: {integrity: sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA==}
@@ -4923,7 +4888,6 @@ packages:
 
   workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
-    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
 
   workbox-navigation-preload@7.0.0:
     resolution: {integrity: sha512-juWCSrxo/fiMz3RsvDspeSLGmbgC0U9tKqcUPZBCf35s64wlaLXyn2KdHHXVQrb2cqF7I0Hc9siQalainmnXJA==}
@@ -5020,20 +4984,20 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.2
       '@jridgewell/trace-mapping': 0.3.17
 
-  '@antfu/eslint-config-basic@0.40.2(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)':
+  '@antfu/eslint-config-basic@0.40.2(@typescript-eslint/eslint-plugin@6.3.0)(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)':
     dependencies:
       eslint: 8.46.0
       eslint-plugin-antfu: 0.40.2(eslint@8.46.0)(typescript@5.1.6)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.46.0)
       eslint-plugin-html: 7.1.0
-      eslint-plugin-import: eslint-plugin-i@2.28.0-2(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)
+      eslint-plugin-import: eslint-plugin-i@2.28.0-2(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)
       eslint-plugin-jsonc: 2.9.0(eslint@8.46.0)
       eslint-plugin-markdown: 3.0.1(eslint@8.46.0)
       eslint-plugin-n: 16.0.1(eslint@8.46.0)
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-promise: 6.1.1(eslint@8.46.0)
       eslint-plugin-unicorn: 48.0.1(eslint@8.46.0)
-      eslint-plugin-unused-imports: 3.0.0(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)
+      eslint-plugin-unused-imports: 3.0.0(@typescript-eslint/eslint-plugin@6.3.0)(eslint@8.46.0)
       eslint-plugin-yml: 1.8.0(eslint@8.46.0)
       jsonc-eslint-parser: 2.3.0
       yaml-eslint-parser: 1.2.2
@@ -5060,11 +5024,11 @@ snapshots:
 
   '@antfu/eslint-config-ts@0.40.2(eslint@8.46.0)(typescript@5.1.6)':
     dependencies:
-      '@antfu/eslint-config-basic': 0.40.2(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)
-      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)
+      '@antfu/eslint-config-basic': 0.40.2(@typescript-eslint/eslint-plugin@6.3.0)(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
+      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 6.3.0(eslint@8.46.0)(typescript@5.1.6)
       eslint: 8.46.0
-      eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)
+      eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
@@ -6158,243 +6122,10 @@ snapshots:
 
   '@remix-run/router@1.8.0': {}
 
-  '@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@resumejs/template': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@resumejs/template-default': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/hast': 3.0.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@resumejs/template': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@resumejs/template-default': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/hast': 3.0.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@resumejs/resume@0.9.5(@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)))(@types/node@20.4.9)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(terser@5.20.0)(workbox-build@7.0.0)(workbox-window@7.0.0)':
-    dependencies:
-      '@resumejs/components': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/minimist': 1.2.2
-      '@types/react': 18.0.0
-      '@types/react-dom': 18.0.0
-      '@vitejs/plugin-react': 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      kolorist: 1.8.0
-      magic-string: 0.30.2
-      minimist: 1.2.8
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      unbuild: 1.2.1
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-      vite-plugin-pwa: 0.16.5(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))(workbox-build@7.0.0)(workbox-window@7.0.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - workbox-build
-      - workbox-window
-
-  '@resumejs/resume@0.9.5(@resumejs/components@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)))(@types/node@20.4.9)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(terser@5.20.0)(workbox-build@7.0.0)(workbox-window@7.0.0)':
-    dependencies:
-      '@resumejs/components': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/minimist': 1.2.2
-      '@types/react': 18.0.0
-      '@types/react-dom': 18.0.0
-      '@vitejs/plugin-react': 4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      kolorist: 1.8.0
-      magic-string: 0.30.2
-      minimist: 1.2.8
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      unbuild: 1.2.1
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-      vite-plugin-pwa: 0.16.5(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))(workbox-build@7.0.0)(workbox-window@7.0.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - workbox-build
-      - workbox-window
-
-  '@resumejs/template-default@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@iconify-json/carbon': 1.1.19
-      '@resumejs/template': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/hast': 3.0.0
-      '@unocss/preset-icons': 0.55.0
-      '@unocss/preset-wind': 0.55.0
-      '@unocss/reset': 0.55.0
-      '@unocss/transformer-directives': 0.55.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      omit.js: 2.0.2
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      unocss: 0.55.0(postcss@8.4.27)(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@resumejs/template-default@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(postcss@8.4.27)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@iconify-json/carbon': 1.1.19
-      '@resumejs/template': 0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@types/hast': 3.0.0
-      '@unocss/preset-icons': 0.55.0
-      '@unocss/preset-wind': 0.55.0
-      '@unocss/reset': 0.55.0
-      '@unocss/transformer-directives': 0.55.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      omit.js: 2.0.2
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      unocss: 0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@resumejs/template@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@types/hast': 3.0.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@resumejs/template@0.9.5(@types/node@20.4.9)(@types/react@18.0.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@types/hast': 3.0.0
-      clsx: 2.0.0
-      hast-util-has-property: 3.0.0
-      react: 18.0.0
-      react-dom: 18.0.0(react@18.0.0)
-      react-markdown: 8.0.7(@types/react@18.0.0)(react@18.0.0)
-      rehype-raw: 6.1.1
-      remark-frontmatter: 4.0.1
-      remark-gfm: 3.0.1
-      unified: 10.1.2
-      unist-builder: 4.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit: 5.0.0
-      vite-plugin-dts: 3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      yaml: 2.3.1
-    transitivePeerDependencies:
-      - '@types/node'
-      - '@types/react'
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
   '@rollup/plugin-alias@5.0.0(rollup@3.28.0)':
     dependencies:
-      slash: 4.0.0
-    optionalDependencies:
       rollup: 3.28.0
+      slash: 4.0.0
 
   '@rollup/plugin-babel@5.3.1(@babel/core@7.22.10)(rollup@2.79.1)':
     dependencies:
@@ -6411,13 +6142,11 @@ snapshots:
       glob: 8.0.3
       is-reference: 1.2.1
       magic-string: 0.27.0
-    optionalDependencies:
       rollup: 3.28.0
 
   '@rollup/plugin-json@6.0.0(rollup@3.28.0)':
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
-    optionalDependencies:
       rollup: 3.28.0
 
   '@rollup/plugin-node-resolve@11.2.1(rollup@2.79.1)':
@@ -6438,7 +6167,6 @@ snapshots:
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.1
-    optionalDependencies:
       rollup: 3.28.0
 
   '@rollup/plugin-replace@2.4.2(rollup@2.79.1)':
@@ -6451,7 +6179,6 @@ snapshots:
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
       magic-string: 0.27.0
-    optionalDependencies:
       rollup: 3.28.0
 
   '@rollup/pluginutils@3.1.0(rollup@2.79.1)':
@@ -6461,24 +6188,16 @@ snapshots:
       picomatch: 2.3.1
       rollup: 2.79.1
 
-  '@rollup/pluginutils@5.0.2(rollup@2.79.1)':
-    dependencies:
-      '@types/estree': 1.0.0
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
-    optionalDependencies:
-      rollup: 2.79.1
-
   '@rollup/pluginutils@5.0.2(rollup@3.28.0)':
     dependencies:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-    optionalDependencies:
       rollup: 3.28.0
 
   '@rushstack/node-core-library@3.59.7(@types/node@20.4.9)':
     dependencies:
+      '@types/node': 20.4.9
       colors: 1.2.5
       fs-extra: 7.0.1
       import-lazy: 4.0.0
@@ -6486,8 +6205,6 @@ snapshots:
       resolve: 1.22.1
       semver: 7.5.4
       z-schema: 5.0.5
-    optionalDependencies:
-      '@types/node': 20.4.9
 
   '@rushstack/rig-package@0.4.1':
     dependencies:
@@ -6533,7 +6250,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/react@14.0.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)':
+  '@testing-library/react@14.0.0(react-dom@18.0.0)(react@18.0.0)':
     dependencies:
       '@babel/runtime': 7.21.0
       '@testing-library/dom': 9.2.0
@@ -6650,7 +6367,7 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.0
 
-  '@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)':
+  '@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)':
     dependencies:
       '@eslint-community/regexpp': 4.6.2
       '@typescript-eslint/parser': 6.3.0(eslint@8.46.0)(typescript@5.1.6)
@@ -6666,7 +6383,6 @@ snapshots:
       natural-compare-lite: 1.4.0
       semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.1.6)
-    optionalDependencies:
       typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
@@ -6679,7 +6395,6 @@ snapshots:
       '@typescript-eslint/visitor-keys': 6.3.0
       debug: 4.3.4
       eslint: 8.46.0
-    optionalDependencies:
       typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
@@ -6701,7 +6416,6 @@ snapshots:
       debug: 4.3.4
       eslint: 8.46.0
       ts-api-utils: 1.0.1(typescript@5.1.6)
-    optionalDependencies:
       typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
@@ -6719,7 +6433,6 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       tsutils: 3.21.0(typescript@5.1.6)
-    optionalDependencies:
       typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
@@ -6733,7 +6446,6 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.1.6)
-    optionalDependencies:
       typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
@@ -6777,45 +6489,16 @@ snapshots:
       '@typescript-eslint/types': 6.3.0
       eslint-visitor-keys: 3.4.2
 
-  '@unocss/astro@0.55.0(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
+  '@unocss/astro@0.55.0(vite@4.4.9)':
     dependencies:
       '@unocss/core': 0.55.0
       '@unocss/reset': 0.55.0
-      '@unocss/vite': 0.55.0(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      '@unocss/vite': 0.55.0(vite@4.4.9)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - rollup
 
-  '@unocss/astro@0.55.0(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@unocss/core': 0.55.0
-      '@unocss/reset': 0.55.0
-      '@unocss/vite': 0.55.0(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-    transitivePeerDependencies:
-      - rollup
-
-  '@unocss/cli@0.55.0(rollup@2.79.1)':
-    dependencies:
-      '@ampproject/remapping': 2.2.1
-      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
-      '@unocss/config': 0.55.0
-      '@unocss/core': 0.55.0
-      '@unocss/preset-uno': 0.55.0
-      cac: 6.7.14
-      chokidar: 3.5.3
-      colorette: 2.0.20
-      consola: 3.2.3
-      fast-glob: 3.3.1
-      magic-string: 0.30.2
-      pathe: 1.1.1
-      perfect-debounce: 1.0.0
-    transitivePeerDependencies:
-      - rollup
-
-  '@unocss/cli@0.55.0(rollup@3.28.0)':
+  '@unocss/cli@0.55.0':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
@@ -6925,23 +6608,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.55.0
 
-  '@unocss/vite@0.55.0(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
-    dependencies:
-      '@ampproject/remapping': 2.2.1
-      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
-      '@unocss/config': 0.55.0
-      '@unocss/core': 0.55.0
-      '@unocss/inspector': 0.55.0
-      '@unocss/scope': 0.55.0
-      '@unocss/transformer-directives': 0.55.0
-      chokidar: 3.5.3
-      fast-glob: 3.3.1
-      magic-string: 0.30.2
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-    transitivePeerDependencies:
-      - rollup
-
-  '@unocss/vite@0.55.0(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
+  '@unocss/vite@0.55.0(vite@4.4.9)':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
@@ -6953,17 +6620,17 @@ snapshots:
       chokidar: 3.5.3
       fast-glob: 3.3.1
       magic-string: 0.30.2
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - rollup
 
-  '@vitejs/plugin-react@4.0.4(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))':
+  '@vitejs/plugin-react@4.0.4(vite@4.4.9)':
     dependencies:
       '@babel/core': 7.22.10
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.10)
       react-refresh: 0.14.0
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - supports-color
 
@@ -7028,9 +6695,8 @@ snapshots:
       '@vue/shared': 3.3.4
       minimatch: 9.0.3
       muggle-string: 0.3.1
-      vue-template-compiler: 2.7.14
-    optionalDependencies:
       typescript: 5.1.6
+      vue-template-compiler: 2.7.14
 
   '@vue/reactivity@3.3.4':
     dependencies:
@@ -7663,11 +7329,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint-import-resolver-node@0.3.7)(eslint@8.46.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@6.3.0)(eslint-import-resolver-node@0.3.7)(eslint@8.46.0):
     dependencies:
-      debug: 3.2.7
-    optionalDependencies:
       '@typescript-eslint/parser': 6.3.0(eslint@8.46.0)(typescript@5.1.6)
+      debug: 3.2.7
       eslint: 8.46.0
       eslint-import-resolver-node: 0.3.7
     transitivePeerDependencies:
@@ -7697,13 +7362,13 @@ snapshots:
     dependencies:
       htmlparser2: 8.0.2
 
-  eslint-plugin-i@2.28.0-2(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0):
+  eslint-plugin-i@2.28.0-2(@typescript-eslint/parser@6.3.0)(eslint@8.46.0):
     dependencies:
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 8.46.0
       eslint-import-resolver-node: 0.3.7
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint-import-resolver-node@0.3.7)(eslint@8.46.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.3.0)(eslint-import-resolver-node@0.3.7)(eslint@8.46.0)
       get-tsconfig: 4.7.0
       is-glob: 4.0.3
       minimatch: 3.1.2
@@ -7715,12 +7380,11 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@27.2.3(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6):
+  eslint-plugin-jest@27.2.3(@typescript-eslint/eslint-plugin@6.3.0)(eslint@8.46.0)(typescript@5.1.6):
     dependencies:
+      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/utils': 5.57.0(eslint@8.46.0)(typescript@5.1.6)
       eslint: 8.46.0
-    optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -7753,14 +7417,13 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.1.0: {}
 
-  eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.0.0(eslint@8.46.0))(eslint@8.46.0)(prettier@3.0.1):
+  eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.0.0)(eslint@8.46.0)(prettier@3.0.1):
     dependencies:
       eslint: 8.46.0
+      eslint-config-prettier: 9.0.0(eslint@8.46.0)
       prettier: 3.0.1
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
-    optionalDependencies:
-      eslint-config-prettier: 9.0.0(eslint@8.46.0)
 
   eslint-plugin-promise@6.1.1(eslint@8.46.0):
     dependencies:
@@ -7808,12 +7471,11 @@ snapshots:
       semver: 7.5.4
       strip-indent: 3.0.0
 
-  eslint-plugin-unused-imports@3.0.0(@typescript-eslint/eslint-plugin@6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0):
+  eslint-plugin-unused-imports@3.0.0(@typescript-eslint/eslint-plugin@6.3.0)(eslint@8.46.0):
     dependencies:
+      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.1.6)
       eslint: 8.46.0
       eslint-rule-composer: 0.3.0
-    optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 6.3.0(@typescript-eslint/parser@6.3.0(eslint@8.46.0)(typescript@5.1.6))(eslint@8.46.0)(typescript@5.1.6)
 
   eslint-plugin-yml@1.8.0(eslint@8.46.0):
     dependencies:
@@ -9058,7 +8720,6 @@ snapshots:
       mlly: 1.4.0
       mri: 1.2.0
       pathe: 1.1.1
-    optionalDependencies:
       typescript: 5.1.6
 
   mlly@1.2.0:
@@ -9087,7 +8748,7 @@ snapshots:
 
   muggle-string@0.3.1: {}
 
-  nano-css@5.3.5(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
+  nano-css@5.3.5(react-dom@18.0.0)(react@18.0.0):
     dependencies:
       css-tree: 1.1.3
       csstype: 3.1.2
@@ -9407,7 +9068,7 @@ snapshots:
 
   react-refresh@0.14.0: {}
 
-  react-router-dom@6.15.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
+  react-router-dom@6.15.0(react-dom@18.0.0)(react@18.0.0):
     dependencies:
       '@remix-run/router': 1.8.0
       react: 18.0.0
@@ -9424,7 +9085,7 @@ snapshots:
       react: 18.0.0
       tslib: 2.5.0
 
-  react-use@17.4.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
+  react-use@17.4.0(react-dom@18.0.0)(react@18.0.0):
     dependencies:
       '@types/js-cookie': 2.2.7
       '@xobotyi/scrollbar-width': 1.9.5
@@ -9432,7 +9093,7 @@ snapshots:
       fast-deep-equal: 3.1.3
       fast-shallow-equal: 1.0.0
       js-cookie: 2.2.1
-      nano-css: 5.3.5(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+      nano-css: 5.3.5(react-dom@18.0.0)(react@18.0.0)
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
       react-universal-interface: 0.6.2(react@18.0.0)(tslib@2.5.0)
@@ -10065,10 +9726,10 @@ snapshots:
 
   universalify@2.0.0: {}
 
-  unocss@0.55.0(postcss@8.4.27)(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)):
+  unocss@0.55.0(postcss@8.4.27)(vite@4.4.9):
     dependencies:
-      '@unocss/astro': 0.55.0(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@unocss/cli': 0.55.0(rollup@2.79.1)
+      '@unocss/astro': 0.55.0(vite@4.4.9)
+      '@unocss/cli': 0.55.0
       '@unocss/core': 0.55.0
       '@unocss/extractor-arbitrary-variants': 0.55.0
       '@unocss/postcss': 0.55.0(postcss@8.4.27)
@@ -10086,38 +9747,8 @@ snapshots:
       '@unocss/transformer-compile-class': 0.55.0
       '@unocss/transformer-directives': 0.55.0
       '@unocss/transformer-variant-group': 0.55.0
-      '@unocss/vite': 0.55.0(rollup@2.79.1)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-    transitivePeerDependencies:
-      - postcss
-      - rollup
-      - supports-color
-
-  unocss@0.55.0(postcss@8.4.27)(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)):
-    dependencies:
-      '@unocss/astro': 0.55.0(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-      '@unocss/cli': 0.55.0(rollup@3.28.0)
-      '@unocss/core': 0.55.0
-      '@unocss/extractor-arbitrary-variants': 0.55.0
-      '@unocss/postcss': 0.55.0(postcss@8.4.27)
-      '@unocss/preset-attributify': 0.55.0
-      '@unocss/preset-icons': 0.55.0
-      '@unocss/preset-mini': 0.55.0
-      '@unocss/preset-tagify': 0.55.0
-      '@unocss/preset-typography': 0.55.0
-      '@unocss/preset-uno': 0.55.0
-      '@unocss/preset-web-fonts': 0.55.0
-      '@unocss/preset-wind': 0.55.0
-      '@unocss/reset': 0.55.0
-      '@unocss/transformer-attributify-jsx': 0.55.0
-      '@unocss/transformer-attributify-jsx-babel': 0.55.0
-      '@unocss/transformer-compile-class': 0.55.0
-      '@unocss/transformer-directives': 0.55.0
-      '@unocss/transformer-variant-group': 0.55.0
-      '@unocss/vite': 0.55.0(rollup@3.28.0)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      '@unocss/vite': 0.55.0(vite@4.4.9)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -10185,14 +9816,14 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite-node@0.34.1(@types/node@20.4.9)(terser@5.20.0):
+  vite-node@0.34.1(@types/node@20.4.9):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -10203,23 +9834,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-dts@3.5.1(@types/node@20.4.9)(rollup@2.79.1)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)):
-    dependencies:
-      '@microsoft/api-extractor': 7.36.4(@types/node@20.4.9)
-      '@rollup/pluginutils': 5.0.2(rollup@2.79.1)
-      '@vue/language-core': 1.8.8(typescript@5.1.6)
-      debug: 4.3.4
-      kolorist: 1.8.0
-      typescript: 5.1.6
-      vue-tsc: 1.8.8(typescript@5.1.6)
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - rollup
-      - supports-color
-
-  vite-plugin-dts@3.5.1(@types/node@20.4.9)(rollup@3.28.0)(typescript@5.1.6)(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0)):
+  vite-plugin-dts@3.5.1(@types/node@20.4.9)(typescript@5.1.6)(vite@4.4.9):
     dependencies:
       '@microsoft/api-extractor': 7.36.4(@types/node@20.4.9)
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
@@ -10227,18 +9842,17 @@ snapshots:
       debug: 4.3.4
       kolorist: 1.8.0
       typescript: 5.1.6
+      vite: 4.4.9(@types/node@20.4.9)
       vue-tsc: 1.8.8(typescript@5.1.6)
-    optionalDependencies:
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite-plugin-import-css@0.1.5(@types/node@20.4.9)(rollup@3.28.0)(terser@5.20.0):
+  vite-plugin-import-css@0.1.5(@types/node@20.4.9):
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.28.0)
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -10249,28 +9863,27 @@ snapshots:
       - sugarss
       - terser
 
-  vite-plugin-pwa@0.16.5(vite@4.4.9(@types/node@20.4.9)(terser@5.20.0))(workbox-build@7.0.0)(workbox-window@7.0.0):
+  vite-plugin-pwa@0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0):
     dependencies:
       debug: 4.3.4
       fast-glob: 3.3.1
       pretty-bytes: 6.1.1
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@4.4.9(@types/node@20.4.9)(terser@5.20.0):
+  vite@4.4.9(@types/node@20.4.9):
     dependencies:
+      '@types/node': 20.4.9
       esbuild: 0.18.20
       postcss: 8.4.27
       rollup: 3.28.0
     optionalDependencies:
-      '@types/node': 20.4.9
       fsevents: 2.3.2
-      terser: 5.20.0
 
-  vitest@0.34.1(jsdom@22.1.0)(terser@5.20.0):
+  vitest@0.34.1(jsdom@22.1.0):
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
@@ -10285,6 +9898,7 @@ snapshots:
       cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
+      jsdom: 22.1.0
       local-pkg: 0.4.3
       magic-string: 0.30.2
       pathe: 1.1.1
@@ -10293,11 +9907,9 @@ snapshots:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.7.0
-      vite: 4.4.9(@types/node@20.4.9)(terser@5.20.0)
-      vite-node: 0.34.1(@types/node@20.4.9)(terser@5.20.0)
+      vite: 4.4.9(@types/node@20.4.9)
+      vite-node: 0.34.1(@types/node@20.4.9)
       why-is-node-running: 2.2.2
-    optionalDependencies:
-      jsdom: 22.1.0
     transitivePeerDependencies:
       - less
       - lightningcss

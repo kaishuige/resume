@@ -21,7 +21,6 @@ import {
 } from './plugins'
 import { RESUME_THEME_KEY } from './constants'
 import ResumeWrapper from './components/ResumeWrapper'
-import 'uno.css'
 
 export interface ResumeProps extends Omit<ReactMarkdownOptions, 'components'> {
   /**
@@ -90,7 +89,7 @@ export function Resume(props: ResumeProps) {
     >
       <ResumeWrapper>
         <div
-          className={clsx('font-sans resume-print', {
+          className={clsx({
             dark: !props.onDarkClass && dark,
           })}
           lang="zh-CN"
