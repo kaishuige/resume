@@ -19,27 +19,21 @@ export default defineConfig({
             'PingFang SC',
             'Microsoft YaHei',
             'sans-serif',
-          ].join(','),
+          ],
         },
-      },
-      shortcuts: {
-        'resume-print': 'font-simsun text-render-geometric',
       },
       rules: [
         [
-          'font-simsun',
+          'resume-print',
           {
-            'font-family':
-              'SimSun, 宋体, Microsoft YaHei, 微软雅黑, serif !important',
-          },
-        ],
-        [
-          'text-render-geometric',
-          {
-            '-webkit-font-smoothing': 'initial',
-            '-moz-osx-font-smoothing': 'initial',
-            '-webkit-text-size-adjust': '100%',
-            'text-rendering': 'geometricPrecision',
+            '@media print': {
+              'font-family':
+                'SimSun, 宋体, Microsoft YaHei, 微软雅黑, serif !important',
+              '-webkit-font-smoothing': 'initial',
+              '-moz-osx-font-smoothing': 'initial',
+              '-webkit-text-size-adjust': '100%',
+              'text-rendering': 'geometricPrecision',
+            },
           },
         ],
       ],
